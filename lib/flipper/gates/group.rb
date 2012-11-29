@@ -17,7 +17,7 @@ module Flipper
       end
 
       def group_names
-        toggle.value
+        toggle.value.map {|name| name.to_sym }
       end
 
       def groups
